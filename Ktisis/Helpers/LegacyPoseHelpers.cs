@@ -16,7 +16,7 @@ namespace Ktisis.Helpers {
 			
 			var lines = file.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.TrimEntries);
 			
-			for (var i = 7; i < lines.Length - 1; i++) {
+			for (var i = 1; i < lines.Length - 1; i++) {
 				result += ConvertLegacyBone(lines[i]);
 			}
 			
